@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="card">
+        <h1 class="title">Secure Login</h1>
+        <p class="sub">Complete the CAPTCHA to verify you are human.</p>
+
+        <div class="field">
+            <label for="nameinput">Username</label>
+            <input type="text" id="nameinput" placeholder="Enter username">
+        </div>
+
+        <div class="field">
+            <label for="pasinput">Password</label>
+            <input type="password" id="pasinput" placeholder="Enter password">
+        </div>
+
+        <div class="captcha-box">
+            <p id="captcha"></p>
+            <button class="ghost" id="captchaBtn" type="button">Reload</button>
+        </div>
+
+        <div class="field">
+            <label for="fillinput">Type the CAPTCHA</label>
+            <input type="text" id="fillinput" placeholder="Re-enter the code">
+        </div>
+
+        <button class="primary" id="submit">Submit</button>
+        <p class="note">Tip: the code is case-sensitive.</p>
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
